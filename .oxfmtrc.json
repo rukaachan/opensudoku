@@ -1,0 +1,11 @@
+{
+  "ignorePatterns": ["dist/**", "node_modules/**", ".git/**"],
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": false,
+  "trailingComma": "all",
+  "endOfLine": "lf",
+  "insertFinalNewline": true
+}

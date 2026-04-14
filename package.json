@@ -1,0 +1,32 @@
+{
+  "name": "opensudoku",
+  "version": "0.1.0",
+  "description": "Terminal Sudoku game built with OpenTUI",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun test ./tests",
+    "test:engine": "bun test tests/engine",
+    "test:render": "bun test tests/render",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check .",
+    "stage:release": "bun run scripts/stage-release.ts",
+    "bench": "bun run scripts/perf/bench.ts",
+    "smoke-test": "bun run scripts/smoke-test.ts"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.1.90"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^24.3.0",
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "typescript": "^6.0.2"
+  },
+  "engines": {
+    "bun": ">=1.3.0"
+  }
+}

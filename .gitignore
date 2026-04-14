@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build and runtime artifacts
+/dist/
+coverage/
+*.tsbuildinfo
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Private/local-only files
+.env
+.env.*
+!.env.example
+*.local
+.zed/
+.omp/
+.claude/

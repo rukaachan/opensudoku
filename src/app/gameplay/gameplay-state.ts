@@ -1,0 +1,44 @@
+import type { Board, History, Selection } from "../../domain/board";
+import type { DailyDateKey, Difficulty, SessionType } from "../puzzle-tools";
+import type { requestHint } from "../puzzle-tools";
+import type { AppScreen, CandidateDisplayMode, DailyBrowseMode } from "./gameplay-model";
+import type { ProgressSummary } from "../progression/progression-store";
+
+export interface GameplayState {
+  screen: AppScreen;
+  rootFocusIndex: number;
+  board: Board;
+  history: History;
+  selection: Selection;
+  notesMode: boolean;
+  candidateDisplayMode: CandidateDisplayMode;
+  status: string;
+  solved: boolean;
+  invalid: boolean;
+  activeDifficulty: Difficulty | null;
+  activeSessionType: SessionType | null;
+  activeSessionId: string | null;
+  activeDailyDateKey: DailyDateKey | null;
+  dailyBrowseMode: DailyBrowseMode;
+  dailySelectedDateKey: DailyDateKey | null;
+  dailyBrowseAnchorDay: number | null;
+  lastHint: ReturnType<typeof requestHint>["hint"];
+  remainingHints: number;
+  activeNumber: number | null;
+  hintPulseUntilMs: number | null;
+  strikeCount: number;
+  runLocked: boolean;
+  sessionStartedAtMs: number | null;
+  sessionStoppedAtMs: number | null;
+  sessionTimerMode: "stopwatch" | "challenge";
+  challengeTotalSeconds: number | null;
+  challengeFailed: boolean;
+  usedHints: boolean;
+  usedNotes: boolean;
+  bestTimeMs: number | null;
+  bestTimeStorePath: string;
+  dailyCompletionStorePath: string;
+  dailyStreakCount: number;
+  dailyCompletedDateKeys: DailyDateKey[];
+  progressSummary: ProgressSummary | null;
+}
