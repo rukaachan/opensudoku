@@ -2,6 +2,7 @@
   "name": "opensudoku",
   "version": "0.1.0",
   "description": "Terminal Sudoku game built with OpenTUI",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "start": "bun run src/index.ts",
