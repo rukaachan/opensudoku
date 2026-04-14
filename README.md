@@ -48,8 +48,7 @@ bun run start -- --version
 ## Windows one-line install (GitHub Releases)
 
 ```powershell
-$repo = "rukaachan/opensudoku"
-curl.exe -fsSL "https://github.com/$repo/releases/latest/download/install.ps1" | powershell -NoProfile -ExecutionPolicy Bypass -
+curl.exe -fsSL "https://github.com/rukaachan/opensudoku/releases/latest/download/install.ps1" | powershell -NoProfile -ExecutionPolicy Bypass -
 ```
 
 What it does:
@@ -63,8 +62,7 @@ What it does:
 ### Uninstall completed install
 
 ```powershell
-$repo = "rukaachan/opensudoku"
-curl.exe -fsSL "https://github.com/$repo/releases/latest/download/install.ps1" | powershell -NoProfile -ExecutionPolicy Bypass -Uninstall -
+curl.exe -fsSL "https://github.com/rukaachan/opensudoku/releases/latest/download/install.ps1" | powershell -NoProfile -ExecutionPolicy Bypass -Uninstall -
 ```
 
 Tip: installer default repo can also be overridden with `OPEN_SUDOKU_RELEASE_REPO`.
